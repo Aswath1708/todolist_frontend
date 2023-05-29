@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;500;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.checked{
+    text-decoration: line-through solid rgb(0, 0, 0);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70vw;
+}
+input{
+    text-align: center;
+    border: 1px ridge black;
+    padding: 7px;
+}
+select{
+    text-align: center;
+    border: 1px ridge black;
+    padding: 7px;
+    cursor: pointer;
+}
+#add-btn{
+    margin: 10px 0;
+    padding: 7px;
+    background-color: aqua;
+    border: 1px ridge black;
+    border-radius: 5px;
+    color: black;
+    font-size: medium;
+    cursor: pointer;
+}
+#todo-list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+@media screen and (max-width:640px) {
+    #todo-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
